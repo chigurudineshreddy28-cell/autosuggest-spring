@@ -1,3 +1,22 @@
-h1{
+body{
+  margin: 0px;
+}
+
+body 
+{
+
   color:rgb(232, 29, 29);
+}
+.navbar{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(21, 21, 27);
+  padding:20px;
+  text-align: center;
+}
+
+.navbar a{
+  padding:20px;
+  text-decoration: none;
+  color:black;
 }
