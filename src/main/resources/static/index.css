@@ -6,6 +6,7 @@ body
 {
 
   color:rgb(232, 29, 29);
+  background-color:rgb(197, 211, 207);
 }
 .navbar{
   border-style: solid;
@@ -13,10 +14,41 @@ body
   border-color: rgb(21, 21, 27);
   padding:20px;
   text-align: center;
+  background-color: white;
 }
 
 .navbar a{
   padding:20px;
   text-decoration: none;
   color:black;
+  font-size:20px;
+}
+
+.navbar a:hover{
+ color :red;
+  background-color: blue;
+}
+.card{
+border:1px solid black;    
+border-color:rgb(100,100,100);
+border-style:1px;
+border-color: rgb(113, 85, 85);
+border-radius:30px;
+overflow:hidden;
+/*margin-left:40%*/
+width:350px;
+text-align:center;
+margin-top:70px;
+margin-left:auto;
+margin-right:auto;
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card img{
+  width:350px;
+  height: auto;
+}
+.card button{
+  border-style:none;
+  padding:10px;
+  border-radius:8px;
 }
