@@ -1,14 +1,14 @@
 
 var users = [
     {
-        "name": "Dinesh Reddy",
+        "name": "john",
         "gender": "Male",
         "image":"john.png"
     },
         {
-        "name": "Ruku",
+        "name": "jane",
         "gender": "female",
-        "image":"image.png"
+        "image":"jane.png"
     }
 ]
 var id=0;
@@ -25,3 +25,25 @@ function ToggleUser() {
     var userGender= document.getElementById("user-gender");
     userGender.innerHTML=users[id].gender;  
   }
+ function randomuser() {
+    fetch("https://randomuser.me/api/")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            var usersData = data.results[0];
+
+            var userImage = document.getElementById("user-image");
+            userImage.src = usersData.picture.large;
+
+            var userName = document.getElementById("user-name");
+            userName.innerHTML =
+                usersData.name.first + " " + usersData.name.last;
+
+            var userGender = document.getElementById("user-gender");
+            userGender.innerHTML = usersData.gender;
+        })
+        .catch(function(error) {
+            console.log("Error fetching user data:", error);
+        });
+}
